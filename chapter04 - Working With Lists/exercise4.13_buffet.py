@@ -8,4 +8,4 @@ for food in foods:
 foods = ('salad', 'eggs', 'ham', 'peas', 'bacon')
 for food in foods:
     print(food)
-    
+
