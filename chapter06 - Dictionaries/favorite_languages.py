@@ -1,13 +1,14 @@
 favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python'
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
     }
 
-for name, language in favorite_languages.items():
-    print(name.title() + "'s favorite language is " +
-          language.title() + ".")
+for name, languages in favorite_languages.items():
+    print("\n" + name.title() + "'s favorite languages are:")
+    for language in languages:
+        print("\t" + language.title())
 
 #  Looping through the keys of the dictionary
 for name in favorite_languages.keys():
@@ -25,7 +26,7 @@ for name in favorite_languages.keys():
     if name in friends:
         print("   Hi " + name.title() +
               ", I see your favorite language is " +
-              favorite_languages[name].title())
+              name.title())
 
 #  Finding if key exists:
 if 'erin' not in favorite_languages.keys():
@@ -38,8 +39,8 @@ for name in sorted(favorite_languages.keys()): # Sorts the keys before execution
 #  Looping without keys (With duplicates):
 print("The following languages have been mentioned:")
 for language in favorite_languages.values():
-    print(language.title())
+    print(language)
 
 #  Looping without keys (Without duplicates):
 for language in set(favorite_languages.values()):
-    print(language.title())
+    print(language)
