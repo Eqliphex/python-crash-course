@@ -5,12 +5,11 @@ chosen_toppings = []
 topping_number = 1
 is_active = True
 
-prompt = "Enter " + str(topping_number) + ".\n"
-
 while is_active:
-    topping = input(prompt)
+    topping = input("Enter " + str(topping_number) + ". topping\n")
     if topping != 'quit':
-        chosen_toppings.append(input(prompt))
+        chosen_toppings.append(topping)
+        topping_number += 1
     else:
         is_active = False
 
