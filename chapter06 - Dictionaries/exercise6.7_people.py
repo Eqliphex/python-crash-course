@@ -26,6 +26,6 @@ people = [person1, person2, person3]
 #  Printing all their information:
 for person_info in people:
     for key, value in person_info.items():
-        print(str(key).title() + ": " + str(value).title())
-
+        print("person:" + str(key).title() + ": " + str(value).title())
+        print()
     print() #  For making a format linebreak
