@@ -1,0 +1,21 @@
+#  Start with users that need to be verified,
+#  and en empty list to hold confirmed users
+
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
+
+#  Verify each user until there are nu more unconfirmed users.
+#  Move each verified user into the list of confirmed users.
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print("Verifying user: " + current_user.title())
+    confirmed_users.append(current_user)
+
+#  Display all confirmed users.
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
+
+#  NOTE: use are for-loop when iterating over a static size collection.
+#  If changes needs to be made, use a while-loop.
