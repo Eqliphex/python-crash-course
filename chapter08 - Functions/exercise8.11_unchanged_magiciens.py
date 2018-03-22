@@ -14,8 +14,8 @@ def show_magicians(magicians):
 def make_great(magicians):
     """Appends 'the great' to the list items
 
-    Arguements:
-        magician (list): list with magicians
+    Arguments:
+        magicians (list): list with magicians
 
     Return:
         :returns a new list with updated names.
