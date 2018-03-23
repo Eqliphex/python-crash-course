@@ -1,4 +1,4 @@
-magicians = ['patrick', 'tobias', 'merlin', 'david']
+magicians = ['patrick', 'tobias', 'merlin', 'david', 'hendrik']
 
 
 def show_magicians(magicians):
