@@ -9,16 +9,15 @@ def build_profile(first_name, last_name, **user_info):
     Return:
         user dictionary
     """
-    profile = {}
-    profile['first_name'] = first_name
-    profile['last_name'] = last_name
+    profile = {'first_name': first_name, 'last_name': last_name}
     for key, value in user_info.items():
         profile[key] = value
 
     return profile
 
 
-user_profile = build_profile('albert', 'einstein',
-                             location='princeton',
-                             field='physics')
+user_profile = build_profile('patrick', 'meyer',
+                             location='aarhus',
+                             field='computer science',
+                             age=26)
 print(user_profile)
