@@ -25,6 +25,12 @@ class Dog():
         print(self.name.title() + " rolled over!.")
 
 my_dog = Dog('buller', 6)
+your_dog = Dog('lucy', 3)
+
 
 print("My dog's name is " + my_dog.name.title() + ".")
 print("My dog is " + str(my_dog.age) + " years old.")
+
+print("\nYour dog's name is " + your_dog.name.title() + ".")
+print("Your dog is " + str(your_dog.age) + " years old.")
+your_dog.sit()
