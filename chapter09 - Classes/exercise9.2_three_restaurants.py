@@ -18,9 +18,9 @@ class Restaurant():
         print("Restaurant is open!")
 
 
-restaurant1 = Restaurant("peppitos", "italian")
-restaurant2 = Restaurant("khawand", "italian")
-restaurant3 = Restaurant("divan", "turkish")
+restaurant1 = Restaurant("Peppitos", "italian")
+restaurant2 = Restaurant("Khawand", "italian")
+restaurant3 = Restaurant("Divan", "turkish")
 
 restaurant1.describe_restaurant()
 restaurant2.describe_restaurant()
